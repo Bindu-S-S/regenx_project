@@ -88,7 +88,9 @@ const DimViz = () => {
                     } text-gray-700`}
                   >
                     <Button1
-                      onClick={() => setSelected(item)}
+                      onClick={() => {setSelected(item)
+                        setOpen(false);
+                      }}
                       name={item}
                       key={index}
                     />
